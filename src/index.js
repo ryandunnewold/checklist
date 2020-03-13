@@ -171,6 +171,9 @@ class Checklist {
     const lastItem = this._elements.items[this._elements.items.length - 1].querySelector(`.${this.CSS.textField}`);
     const lastItemText = lastItem.innerHTML.replace('<br>', ' ').trim();
 
+    console.log('currentNode', currentNode)
+    console.log('lastItem', lastItem)
+    console.log('lastItemText', lastItemText)
     /**
      * Prevent checklist item generation if last item is empty and get out of checklist
      */
