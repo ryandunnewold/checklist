@@ -179,7 +179,7 @@ class Checklist {
      */
     if (currentNode === lastItem && !lastItemText) {
       /** Insert New Block and set caret */
-      this.api.blocks.insertNewBlock();
+      this.api.blocks.insert(undefined, undefined, undefined, undefined, true);
       event.stopPropagation();
       return;
     }
