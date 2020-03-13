@@ -180,8 +180,10 @@ class Checklist {
     if (currentNode === lastItem && !lastItemText) {
       /** Insert New Block and set caret */
       this.api.blocks.insert(undefined, undefined, undefined, undefined, true);
+      console.log('backspace')
+      this.backspace(event);
       event.stopPropagation();
-      return;
+      return
     }
 
     /**
